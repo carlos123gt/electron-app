@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Tarea</title>
+    <link rel="stylesheet" href="../styles/new-task.css">
+</head>
+<body>
+    <div class="container">
+        <div class="close-button">
+            <button>X</button>
+        </div>
+        <form id="form">
+            <legend>Nueva Tarea</legend>
+            <input type="text" name="name" id="title" placeholder="Titulo de tarea" autofocus required>
+            <input type="text" name="description" id="description" placeholder="Descripcion" required>
+            <select name="priority" id="priority" required>
+                <option value="">--Prioridad--</option>
+                <option value="bajo">Baja</option>
+                <option value="medio">Media</option>
+                <option value="alto">Alta</option>
+            </select>
+            <button class="save-button">
+                GUARDAR TAREA
+            </button>
+        </form>
+    </div>
+    <script src="../scripts/new-task.js"></script>
+</body>
+</html>

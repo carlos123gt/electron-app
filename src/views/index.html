@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <figure>
+                <img src="../assets/task.svg" alt="imagen">
+            </figure>
+            <h1>Gestor De Tareas</h1>
+        </div>
+        <div class="options">
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="title-container">
+            <figure>
+                <img src="../assets/tasklist.svg" alt="">
+            </figure>
+            <h2>Mi tablero</h2>
+        </div>
+        <div class="tablets">
+            <div class="card-container" id="pending" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <div class="title-tablet">
+                    <figure>
+                        <img src="../assets/todo_list.svg" alt="">
+                    </figure>
+                    <h3>Pendiente</h3>
+                </div>
+            </div>
+            <div class="card-container" id="in-progress" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <div class="title-tablet">
+                    <figure>
+                        <img src="../assets/in_progress.svg" alt="">
+                    </figure>
+                    <h3>En progreso</h3>
+                </div>
+            </div>
+            <div class="card-container" id="revision" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <div class="title-tablet">
+                    <figure>
+                        <img src="../assets/inspection.svg" alt="">
+                    </figure>
+                    <h3>En revisión</h3>
+                </div>
+            </div>
+            <div class="card-container" id="done" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <div class="title-tablet">
+                    <figure>
+                        <img src="../assets/ok.svg" alt="">
+                    </figure>
+                    <h3>Terminada</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>

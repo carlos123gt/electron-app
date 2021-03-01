@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf')
+}
+body{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-app-region: drag;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'OpenSans';
+}
+h1,
+h2,
+p{
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans';
+}
+.container{
+    background: #4e596f;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #fff;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 20px 20px 20px;
+}
+
+form input,
+select{
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #fff;
+    font-size: 16px;
+    -webkit-app-region: no-drag;
+    outline: none;
+}
+
+.save-button{
+    border: none;
+    padding: 10px;
+    background: rgb(245,75,100);
+    background: linear-gradient(117deg, rgba(245,75,100,1) 0%, rgba(247,131,97,1) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 3px #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    text-shadow: 0 0 1px #fff;
+    transition: linear 0.2s all;
+    outline: none;
+}
+.save-button:hover{
+    opacity: 0.95;
+    text-shadow: 0 0 2px #fff;
+    transition: linear 0.2s all;
+}
+legend{
+    padding-bottom: 25px;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
+}
+.close-button button{
+    background: rgb(214, 50, 75);
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    transition: linear 0.2s all;
+    outline: none;
+}
+.close-button button:hover{
+    opacity: 0.95;
+    text-shadow: 0 0 2px #fff;
+    transition: linear 0.2s all;
+}
+.close-button{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
