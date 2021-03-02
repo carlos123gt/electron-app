@@ -1,6 +1,7 @@
 const { ipcRenderer } = require('electron');
 
 const form = document.querySelector('#form');
+const close = document.querySelector('#close-button');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -17,4 +18,8 @@ form.addEventListener('submit', (e) => {
 
     ipcRenderer.send('task:new', newTask);
 
+});
+
+close.addEventListener('click', (e) => {
+    ipcRenderer.send('task:close')
 });

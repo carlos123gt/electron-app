@@ -14,7 +14,7 @@ span{
 }
 
 body{
-    background: #fff;
+    background: #161e29;
 }
 h1{
     color: #fff;
@@ -26,20 +26,16 @@ h2{
     padding-bottom: 10px;
 }
 .container{
-    border: 1px solid #dfe6e9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #dfe6e9;
+    border-radius: 20px;
     margin: 20px 10px 10px 10px;
+    background: #0e1621;
     overflow: hidden;
 }
 .title-container{
-    background: #4e596f;
     width: 300px;
-    border-bottom-right-radius: 10px;
     margin: 0;
     padding: 5px 10px;
     display: flex;
-    box-shadow: 0 0 5px #495057;
 }
 .title-container figure{
     width: 50px;
@@ -57,9 +53,9 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 10px;
-    background: #242a3809;
-    box-shadow: 0 0 5px #495057;
+    border-radius: 20px;
+    background: #161e29;
+    min-height: 264px;
 }
 
 .card{
@@ -67,17 +63,15 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 250px;
     overflow: hidden;
-    box-shadow: 0 0 5px #495057;
     transition: linear all 0.2s;
     margin-bottom: 20px;
     cursor: pointer;
+    background: #222e3e;
 }
 .card-head{
-    background: #242a38;
-    background: linear-gradient(117deg, #4e596f 0%, #242a38 100%);
     padding: 10px;
     margin: 0;
     width: 100%;
@@ -85,11 +79,11 @@ h2{
     justify-content: center;
     color: #fff;
     font-size: 22px;
-    text-shadow: 0 0 2px #fff;
 }
 .card-body{
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #fff;
 }
 .card-foot{
     padding: 10px;
@@ -115,14 +109,9 @@ h2{
     transition: linear 0.2s all;
 }
 .title{
-    background: rgb(245,75,100);
-    background: linear-gradient(117deg, rgba(245,75,100,1) 0%, rgba(247,131,97,1) 100%);
-    border-radius: 10px;
     width: 350px;
     margin: 10px;
     padding: 10px;
-    box-shadow: 0 0 5px #495057;
-    text-shadow: 0 0 2px #fff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -147,11 +136,12 @@ h2{
 }
 .title-tablet{
     padding: 10px;
-    color: #242a38;
+    color: #fff;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 250px;
+    text-transform: uppercase;
 }
 .title-tablet figure{
     width: 30px;

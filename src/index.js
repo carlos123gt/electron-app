@@ -61,6 +61,10 @@ ipcMain.on('task:new', (e, newTask) => {
     newTaskWindow.close();
 });
 
+ipcMain.on('task:close', (e) => {
+    newTaskWindow.close();
+});
+
 const templateMenu = [
     {
         label: 'Archivo',
