@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf')
+}
+body{
+    background: #161e29;
+    font-family: 'OpenSans';
+}
+.container{
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+legend{
+    color: #fff;
+    font-size: 24px;
+}
+input{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #222e3e;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 0 0 1px #fff;
+}
+input::placeholder{
+    color: #445a77;
+    text-shadow: 0 0 1px #445a77;
+}
+.sign-button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}

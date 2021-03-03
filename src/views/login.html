@@ -6,11 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 
 <body>
-    <h1>Login</h1>
-    <button id="signUp">Entrar</button>
+    
+    <div class="container">
+        <!-- <div class="close-button" id="close-button">
+            <button>X</button>
+        </div> -->
+        <form id="form">
+            <legend>Iniciar Sesión</legend>
+            <input type="text" name="user" id="user" placeholder="Email o Usuario" autofocus required>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+            <button class="sign-button">
+                Entrar
+            </button>
+        </form>
+    </div>
 
     <script src="../scripts/login.js"></script>
 </body>
