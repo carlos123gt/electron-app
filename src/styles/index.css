@@ -2,53 +2,61 @@
     font-family: 'OpenSans';
     src: url('../fonts/OpenSans-Regular.ttf')
 }
+
 body,
 h1,
 h2,
 h3,
 p,
-span{
+span {
     margin: 0;
     padding: 0;
     font-family: 'OpenSans';
 }
 
-body{
+body {
     background: #161e29;
 }
-h1{
+
+h1 {
     color: #fff;
 }
-h2{
+
+h2 {
     color: #fff;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.container{
+
+.container {
     border-radius: 20px;
     margin: 20px 10px 10px 10px;
     background: #0e1621;
     overflow: hidden;
 }
-.title-container{
+
+.title-container {
     width: 300px;
     margin: 0;
     padding: 5px 10px;
     display: flex;
 }
-.title-container figure{
+
+.title-container figure {
     width: 50px;
     padding: 0;
     margin: 0;
 }
-.tablets{
+
+.tablets {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 20px;
     column-gap: 20px;
 }
-.card-container{
+
+.card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +66,7 @@ h2{
     min-height: 264px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,8 +78,14 @@ h2{
     margin-bottom: 20px;
     cursor: pointer;
     background: #222e3e;
+    cursor: grab;
 }
-.card-head{
+
+.card:active {
+    cursor: grabbing;
+}
+
+.card-head {
     padding: 10px;
     margin: 0;
     width: 100%;
@@ -80,18 +94,21 @@ h2{
     color: #fff;
     font-size: 22px;
 }
-.card-body{
+
+.card-body {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
 }
-.card-foot{
+
+.card-foot {
     padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.card-foot button{
+
+.card-foot button {
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
@@ -103,12 +120,14 @@ h2{
     transition: linear 0.2s all;
     outline: none;
 }
-.card-foot button:hover{
+
+.card-foot button:hover {
     opacity: 0.95;
     text-shadow: 0 0 2px #fff;
     transition: linear 0.2s all;
 }
-.title{
+
+.title {
     width: 350px;
     margin: 10px;
     padding: 10px;
@@ -116,25 +135,31 @@ h2{
     justify-content: flex-start;
     align-items: center;
 }
-.title figure{
+
+.title figure {
     width: 50px;
     padding: 0;
     margin: 0;
 }
-.spanPriority{
+
+.spanPriority {
     padding: 0 10px;
     border-radius: 15px;
 }
-.lowSpan{
+
+.lowSpan {
     background: #00A93B;
 }
-.middleSpan{
+
+.middleSpan {
     background: #fae71e;
 }
-.hightSpan{
+
+.hightSpan {
     background: #FA1E1E;
 }
-.title-tablet{
+
+.title-tablet {
     padding: 10px;
     color: #fff;
     display: flex;
@@ -143,7 +168,8 @@ h2{
     width: 250px;
     text-transform: uppercase;
 }
-.title-tablet figure{
+
+.title-tablet figure {
     width: 30px;
     padding: 0;
     margin: 0;
